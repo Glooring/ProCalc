@@ -8,7 +8,8 @@
 
 ProCalc supports a wide range of operations, from basic arithmetic (addition, subtraction, multiplication, division) to advanced features like square roots, exponents, and reciprocals. Its high precision is powered by **Boost.Multiprecision**, allowing for highly accurate calculations. The interface is responsive and adapts to window resizing, ensuring a seamless experience across different devices.
 
-### **Demonstration**
+---
+## **Demonstration**
 
 Here's a quick demonstration of **ProCalc** in action:
 Here's a quick demonstration of **ProCalc** in action:
