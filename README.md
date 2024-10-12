@@ -14,7 +14,7 @@ ProCalc supports a wide range of operations, from basic arithmetic (addition, su
 Here's a quick demonstration of **ProCalc** in action:
 Here's a quick demonstration of **ProCalc** in action:
 
-<img src="media/calculator_demo.gif" width="260">
+<img src="media/calculator_demo.gif" width="240">
 
 In this GIF, you can see how easy it is to perform both basic arithmetic and advanced operations with the calculator. The interface is designed for smooth, error-free usage.
 
