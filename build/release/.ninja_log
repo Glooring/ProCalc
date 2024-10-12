@@ -1,0 +1,9 @@
+# ninja log v6
+4	1226	7504454010407522	ProCalc_autogen/timestamp	5d0394afbea0333
+4	1226	7504454010407522	ProCalc_autogen/mocs_compilation.cpp	5d0394afbea0333
+4	1226	7504454010407522	D:/Qt Projects/ProCalc/build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/ProCalc_autogen/timestamp	5d0394afbea0333
+4	1226	7504454010407522	D:/Qt Projects/ProCalc/build/Desktop_Qt_6_7_2_MinGW_64_bit-Release/ProCalc_autogen/mocs_compilation.cpp	5d0394afbea0333
+1238	3692	7504454011604014	CMakeFiles/ProCalc.dir/ProCalc_autogen/mocs_compilation.cpp.obj	2ea1066833227e48
+1243	3720	7504454011760296	CMakeFiles/ProCalc.dir/main.cpp.obj	301c5e98ddca755e
+1247	5661	7504454011760296	CMakeFiles/ProCalc.dir/mainwindow.cpp.obj	4bb6ae6c3666be5c
+5662	5853	7504454055951625	ProCalc.exe	6d08755c77ee9d28
