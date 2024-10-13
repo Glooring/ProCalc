@@ -11,8 +11,7 @@ ProCalc supports a wide range of operations, from basic arithmetic (addition, su
 ---
 ## **Demonstration**
 
-Here's a quick demonstration of **ProCalc** in action:
-Here's a quick demonstration of **ProCalc** in action:
+Here's a quick demonstration of **ProCalc** in use:
 
 <img src="media/calculator_demo.gif" width="240">
 
