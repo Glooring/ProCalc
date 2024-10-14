@@ -40,26 +40,14 @@ ProCalc/
 │
 ├── boost_minimal/                    # Reduced Boost library for high-precision calculations
 │   └── boost/                        # Header files for Boost Multiprecision library
-│
-├── build/                            # Build-related folder containing pre-built files and scripts
-│   ├── release/                      # Folder containing the pre-built executable and all dependencies
-│   │   ├── ProCalc.exe               # The main executable for regular users
-│   │   ├── Qt6Core.dll               # Required Qt Core library
-│   │   ├── libgcc_s_seh-1.dll        # MinGW runtime library (GCC exception handling)
-│   │   ├── libstdc++-6.dll           # MinGW runtime library (Standard C++ library)
-│   │   ├── libwinpthread-1.dll       # MinGW runtime library (POSIX threads support)
-│   │   └── [Other necessary files]   # Additional Qt DLLs, libraries, and plugins required to run the app
-│   └── deploy-release.bat            # Batch script to bundle release with necessary dependencies (renamed for clarity)
-│
 ├── tools/                            # Tools and utility scripts
 │   ├── cleanup_boost.py              # Script to remove unnecessary files from the Boost folder
-│   └── cleanup_files.txt             # List of files removed from Boost to reduce dependencies
-│
+│   ├── cleanup_files.txt             # List of files removed from Boost to reduce dependencies
+│   └── deploy-release.bat            # Batch script to bundle release with necessary dependencies (renamed for clarity)
 ├── CMakeLists.txt                    # CMake build configuration file
 ├── CMakeLists.txt.user.example       # Example of a user-specific CMake configuration (user settings excluded from version control)
 ├── LICENSE                           # Project license (MIT License or any other applicable license)
 ├── README.md                         # Documentation for building, running, and contributing to the project
-│
 ├── customFunctions.h                 # Header file containing custom mathematical functions used in the calculator
 ├── main.cpp                          # Main entry point of the application
 ├── mainwindow.cpp                    # Implementation of the main window's logic and functionality
@@ -76,7 +64,7 @@ ProCalc/
 ## **Requirements**
 
 ### **For Regular Users**
-No additional tools are required. The **release** folder includes all the necessary files to run the application.
+No additional tools are required. The **procalc-v1.0.0-release** folder includes all the necessary files to run the application.
 
 ### **For Developers**
 To build **ProCalc** from source, the following are required:
@@ -89,13 +77,18 @@ To build **ProCalc** from source, the following are required:
 
 ## **Installation and Setup**
 
-### **For All Users: (Running the Pre-built Executable)**
+### **For All Users: Run `ProCalc.exe`**
 
-1. **Navigate to the Release Folder**:
-   - Open the **release** folder included in the project repository.
+1. **Download the Release Archive**  
+   Download the pre-built release from the [releases page](https://github.com/Glooring/ProCalc/releases) or directly using [this link](https://github.com/Glooring/ProCalc/releases/download/v1.0.0/procalc-v1.0.0-release.zip).
 
-2. **Run the Application**:
-   - Double-click the `ProCalc.exe` file located in the **release** folder.
+2. **Unzip the Archive**  
+   Extract the contents of the `procalc-v1.0.0-release.zip` file to your preferred location.
+
+3. **Run the Application**  
+   Simply double-click `ProCalc.exe` inside the extracted folder to launch the calculator.
+
+---
 
 ### **For Developers (Building from Source)**
 
@@ -147,12 +140,12 @@ To streamline the **Boost** library for use in **ProCalc**, unnecessary dependen
 
 ## **Packaging the Release**
 
-The **deploy-release.bat** script is provided to ensure that developers can bundle the application with all the necessary dependencies when creating their own release.
+The **deploy-release.bat** script from `tools` folder is provided to ensure that developers can bundle the application with all the necessary dependencies when creating their own release.
 
 ### **Using the Batch File to Include Dependencies**
 
 1. **Run the Batch File**:
-   After building the project in **Release** mode, run the `release-include-dependencies.bat` script.
+   After building the project in **Release** mode, run the `deploy-release.bat` script.
 
 2. **Input Paths**:
    - Enter the full path to the `ProCalc.exe` file (e.g., `C:\Projects\ProCalc\build\Release\ProCalc.exe`).
