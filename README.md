@@ -30,36 +30,6 @@ In this GIF, you can see how easy it is to perform both basic arithmetic and adv
 
 ---
 
-## **Project Structure**
-
-The project is structured as follows:
-
-```
-ProCalc/
-│
-├── boost_minimal/                    # Reduced Boost library for high-precision calculations
-│   └── boost/                        # Header files for Boost Multiprecision library
-├── tools/                            # Tools and utility scripts
-│   ├── cleanup_boost.py              # Script to remove unnecessary files from the Boost folder
-│   ├── cleanup_files.txt             # List of files removed from Boost to reduce dependencies
-│   └── deploy-release.bat            # Batch script to bundle release with necessary dependencies (renamed for clarity)
-├── CMakeLists.txt                    # CMake build configuration file
-├── CMakeLists.txt.user.example       # Example of a user-specific CMake configuration (user settings excluded from version control)
-├── LICENSE                           # Project license (MIT License or any other applicable license)
-├── README.md                         # Documentation for building, running, and contributing to the project
-├── customFunctions.h                 # Header file containing custom mathematical functions used in the calculator
-├── main.cpp                          # Main entry point of the application
-├── mainwindow.cpp                    # Implementation of the main window's logic and functionality
-├── mainwindow.h                      # Header file for the main window class and its components
-├── mainwindow.ui                     # UI definition for the main window, designed in Qt Designer
-├── precisionTypes.h                  # Header file defining custom types used for high-precision calculations
-└── utilities.h                       # Utility functions and helpers used across the application
-
-
-```
-
----
-
 ## **Requirements**
 
 ### **For Regular Users**
@@ -109,6 +79,34 @@ To build **ProCalc** from source, the following are required:
 
 3. **Run the Application**:
    - After building the project in either **Release** or **Debug** mode, run the generated executable from the build directory.
+
+---
+
+## **Project Structure**
+
+The project is structured as follows:
+
+```
+ProCalc/
+│
+├── boost_minimal/                    # Reduced Boost library for high-precision calculations
+│   └── boost/                        # Header files for Boost Multiprecision library
+├── tools/                            # Tools and utility scripts
+│   ├── cleanup_boost.py              # Script to remove unnecessary files from the Boost folder
+│   ├── cleanup_files.txt             # List of files removed from Boost to reduce dependencies
+│   └── deploy-release.bat            # Batch script to bundle release with necessary dependencies (renamed for clarity)
+├── CMakeLists.txt                    # CMake build configuration file
+├── CMakeLists.txt.user.example       # Example of a user-specific CMake configuration (user settings excluded from version control)
+├── LICENSE                           # Project license (MIT License or any other applicable license)
+├── README.md                         # Documentation for building, running, and contributing to the project
+├── customFunctions.h                 # Header file containing custom mathematical functions used in the calculator
+├── main.cpp                          # Main entry point of the application
+├── mainwindow.cpp                    # Implementation of the main window's logic and functionality
+├── mainwindow.h                      # Header file for the main window class and its components
+├── mainwindow.ui                     # UI definition for the main window, designed in Qt Designer
+├── precisionTypes.h                  # Header file defining custom types used for high-precision calculations
+└── utilities.h                       # Utility functions and helpers used across the application
+```
 
 ---
 
